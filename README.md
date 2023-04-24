@@ -3,5 +3,5 @@
 - Open a folder called POE_P1 and locate the program.cs file.
 - Run the file using Visual Studio.
 
-## Link To my GitHub
-- [github repository]()
+## Link To my GitHub Repository
+- [See Repository](https://github.com/CodePuncherIbrahim?tab=repositories)
