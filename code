@@ -1,0 +1,38 @@
+namespace POE_P1;
+class Program
+{
+    static void Main(string[] args)
+    {
+        // deals with errors
+        try
+        {
+            // the jump off
+            welcomeMessage();
+
+            // creates recipe
+            Recipe myRecipe = new Recipe().CreateRecipe();
+            myRecipe.AddIngredient(); // adds ingredients
+            myRecipe.AddStep(); // adds steps
+
+            // displays recipe
+            myRecipe.DisplayRecipe(myRecipe);
+            myRecipe.ScaleRecipe(); // does the maths on the quantities
+
+            myRecipe.ResetValues(); // asks user if they want to reset values
+        }
+        catch
+        {
+            Console.WriteLine("Program Crashed. Re-run It.");
+        }
+        
+        
+    }
+
+    // methods
+    public static void welcomeMessage()
+    {
+        Console.WriteLine("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+        Console.WriteLine("              WELCOME TO SANELE'S RECIPES                  ");
+        Console.WriteLine("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    }
+}
