@@ -19,6 +19,9 @@ class Program
             myRecipe.ScaleRecipe(); // does the maths on the quantities
 
             myRecipe.ResetValues(); // asks user if they want to reset values
+
+            // exit
+            Exit();
         }
         catch
         {
@@ -34,5 +37,25 @@ class Program
         Console.WriteLine("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
         Console.WriteLine("              WELCOME TO SANELE'S RECIPES                  ");
         Console.WriteLine("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+    }
+
+    public static void Exit()
+    {
+        Console.WriteLine("\nExit Program? 1 For 'YES' 0 For 'NO'");
+        int pick = Int32.Parse(Console.ReadLine());
+
+        switch (pick)
+        {
+            case 1:
+                Console.WriteLine("\nEnjoy Your Meal. Cheers.");
+                System.Environment.Exit(0);
+                break;
+            case 0:
+                Console.WriteLine("\nUnfortunately, It ends here.");
+                break;
+            default:
+                Console.WriteLine("\nInvalid Choice. Bye!!!");
+                break;
+        }
     }
 }
