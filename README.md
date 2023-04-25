@@ -1,6 +1,6 @@
 # How To Compile & Run Recipe App
 - You will find a zipped folder and inside its the app software files.
-- Open a folder called POE_P1 and locate the program.cs file.
+- Open a folder called POE_P1 and locate the POE_1.csproj file.
 - Run the file using Visual Studio.
 
 ## Link To my GitHub Repository
